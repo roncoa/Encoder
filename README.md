@@ -1,36 +1,52 @@
-# Encoder
+I'll help you convert this into a proper README.md file, formatting it with Markdown syntax and organizing it for better readability.
 
-* EC11 Encoder Library
- * by roncoa@gmail.com
- * Libreria ottimizzata per gestire encoder rotativi di tipo EC11 e similari
- * 
- * Caratteristiche:
- * - Gestione precisa del conteggio per encoder EC11 (4 impulsi per scatto)
- * - Debounce software configurabile
- * - Divisore impulsi configurabile (1,2,4)
- * - Rilevamento direzione
- * - Calcolo velocità di rotazione
- * - Limiti di posizione impostabili
- * - Diagnostica e debug
- * 
- * Utilizzo base:
- * Encoder enc(pinA, pinB);           // Crea un encoder sui pin specificati
- * enc.setDivisor(4);                 // EC11: conta 1,2,3,4...
- * enc.setDivisor(2);                 // EC11: conta 2,4,6,8...
- * enc.setDivisor(1);                 // EC11: conta 4,8,12,16...
- * 
- * Funzionalità avanzate:
- * enc.setDebounceTime(5);            // Imposta debounce a 5ms
- * enc.setLimits(-100, 100);          // Imposta limiti di posizione
- * enc.setPosition(0);                // Imposta posizione corrente
- * enc.getDirection();                // Ottieni direzione (-1,0,1)
- * enc.getSpeed();                    // Ottieni velocità rotazione
- * enc.getErrorCount();               // Conteggio errori sequenza
- * enc.enableDebug(true);             // Abilita debug seriale
- * 
- * Esempio:
- * Encoder enc(2, 3);                 // Crea encoder su pin 2,3
- * enc.setDivisor(4);                 // Imposta per EC11
- * enc.setDebounceTime(5);            // Debounce 5ms
- * enc.setLimits(0, 100);             // Limita tra 0 e 100
- * int32_t pos = enc.read();          // Leggi posizione
+
+
+```markdown
+# Encoder
+EC11 Encoder Library for Arduino
+
+## Overview
+A highly optimized library for managing EC11-type and similar rotary encoders.
+
+**Author:** roncoa@gmail.com
+
+## Features
+* Precise count management for EC11 encoders (4 pulses per detent)
+* Configurable software debouncing
+* Configurable pulse divider (1,2,4)
+* Direction detection
+* Rotation speed calculation
+* Configurable position limits
+* Diagnostics and debugging capabilities
+
+## Basic Usage
+```cpp
+Encoder enc(pinA, pinB);           // Create encoder on specified pins
+enc.setDivisor(4);                 // EC11: counts 1,2,3,4...
+enc.setDivisor(2);                 // EC11: counts 2,4,6,8...
+enc.setDivisor(1);                 // EC11: counts 4,8,12,16...
+```
+
+## Advanced Features
+```cpp
+enc.setDebounceTime(5);            // Set debounce to 5ms
+enc.setLimits(-100, 100);          // Set position limits
+enc.setPosition(0);                // Set current position
+enc.getDirection();                // Get direction (-1,0,1)
+enc.getSpeed();                    // Get rotation speed
+enc.getErrorCount();               // Get sequence error count
+enc.enableDebug(true);             // Enable serial debugging
+```
+
+## Complete Example
+```cpp
+Encoder enc(2, 3);                 // Create encoder on pins 2,3
+enc.setDivisor(4);                 // Configure for EC11
+enc.setDebounceTime(5);            // Set 5ms debounce
+enc.setLimits(0, 100);            // Limit between 0 and 100
+int32_t pos = enc.read();          // Read position
+```
+```
+
+This README.md provides a clear overview of your encoder library, its features, and how to use it. The content is organized in sections with proper Markdown formatting, making it easy to read both in plain text and when rendered by platforms like GitHub.
