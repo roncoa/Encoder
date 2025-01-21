@@ -1,0 +1,22 @@
+# Syntax Coloring Map For Encoder Library
+
+# Datatypes (KEYWORD1)
+Encoder	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+read	KEYWORD2
+setPosition	KEYWORD2
+getPosition	KEYWORD2
+getDirection	KEYWORD2
+setDebounceTime	KEYWORD2
+getDebounceTime	KEYWORD2
+setDivisor	KEYWORD2
+getDivisor	KEYWORD2
+setLimits	KEYWORD2
+removeLimits	KEYWORD2
+getSpeed	KEYWORD2
+getErrorCount	KEYWORD2
+enableDebug	KEYWORD2
+isValid	KEYWORD2
+
+# Constants (LITERAL1)
