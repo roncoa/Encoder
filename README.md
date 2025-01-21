@@ -1,8 +1,3 @@
-I'll help you convert this into a proper README.md file, formatting it with Markdown syntax and organizing it for better readability.
-
-
-
-```markdown
 # Encoder
 EC11 Encoder Library for Arduino
 
@@ -46,7 +41,5 @@ enc.setDivisor(4);                 // Configure for EC11
 enc.setDebounceTime(5);            // Set 5ms debounce
 enc.setLimits(0, 100);            // Limit between 0 and 100
 int32_t pos = enc.read();          // Read position
-```
-```
 
-This README.md provides a clear overview of your encoder library, its features, and how to use it. The content is organized in sections with proper Markdown formatting, making it easy to read both in plain text and when rendered by platforms like GitHub.
+
