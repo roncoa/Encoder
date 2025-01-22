@@ -4,8 +4,6 @@ EC11 Encoder Library for Arduino
 ## Overview
 A highly optimized library for managing EC11-type and similar rotary encoders.
 
-**Author:** roncoa@gmail.com
-
 ## Features
 * Precise count management for EC11 encoders (4 pulses per detent)
 * Configurable software debouncing
